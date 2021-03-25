@@ -1,0 +1,38 @@
+name: Bug Report
+about: File a bug report
+title: "[Bug]: "
+labels: "bug, not sequenced"
+issue_body: true
+body:
+- type: textarea
+  attributes:
+    label: Are you able to reproduce the bug?
+    description: If yes, please describe the steps to reproduce
+    placeholder: |
+      To help us debug this issue, please explain:
+      - What you were trying to do (and why)
+      - What happened
+      - What you expected to happen
+      - Steps to reproduce (with as minimal input data as possible)
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Who does this bug impact?
+    placeholder: e.g. administrators of repositories, sponsors (people who give money), sponsored developers or organizations (people who receive money)
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Is this urgent, requiring a resolution ASAP?
+    description: If yes, please provide a deadline or details around its impact
+    placeholder: e.g. this bug is preventing multiple users from accessing their profile, or this bug is causing an unpleasant experience for some users but there is a workaround
+  validations:  
+    required: true
+- type: textarea
+  attributes:
+    label: Tasks (for staff)
+    description: Grouped by assignment type, remove groups without an assignment. Don't know about an assignment? Assign a Product Manager and add a comment.
+    placeholder: ex. Product DRI @hoppithecat, Engineering DRI @smolbean, Design DRI @ari
+  validations:  
+    required: false
